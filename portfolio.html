@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .site-header, .jumbo, .skill-1 {
+        background-attachment: fixed;
+        background-image: url('https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80');
+      }
+      nav {
+        transition: transform 0.8s;
+        z-index: 1;
+      }
+      .light-nav {
+        box-shadow: 0 2px rgba(0,0,0,0.4);
+      }
+      .my-project img {
+        transition: all .2s ease-in-out;
+      }
+      .my-project img:hover {
+        transform: scale(1.01);
+      }
+      @media (max-width: 992px) {  
+        .site-header {
+          box-shadow: 0 2px rgba(0,0,0,0.4);
+        }
+      }
+    </style>
+    <title>portfolio</title>
+  </head>
+  <body id="home">
+    <header class="site-header sticky-top" style="background-color: #F5F8FC;">
+        <nav class="nav navbar navbar-light navbar-expand-lg">
+          <div class="container d-flex flex-wrap">
+            <ul class="nav">
+              <li class="nav-item"><a href="#home" class="nav-link text-dark px-2 lead">Portfolio</a></li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navPortfolio" aria-controls="navPortfolio" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-1" id="navPortfolio">
+              <ul class="nav ml-md-auto flex-column flex-md-row">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#home" class="nav-link text-dark px-2 active">Home</a></li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#experiences" class="nav-link text-dark px-2">Experiences</a></li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#works" class="nav-link text-dark px-2">Works</a></li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#educations" class="nav-link text-dark px-2">Education</a></li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#skills" class="nav-link text-dark px-2">Skills</a></li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#contact" class="nav-link text-dark px-2">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="jumbo p-3 p-md-5 mb-4 text-right" style="height: 50vh;" >
+        <div class="col-md-8 mx-auto mt-5">
+          <h1 class="display-4 text-dark">Jun Potisanmetee</h1>
+          <div class="col-md-8 ml-auto p-0">
+            <p class="text-muted">Seeking a full-time role as a software developer, recently completing an extensive 4-month, full time Software Engineering immersive boot camp, specializing in full-stack apps with key programming languages, and exposure to data structures, design patters, APIs, and more. 3-month course completed at General Assembly, San Francisco</p>
+          </div>
+        </div>
+      </div>
+    <main>
+      <div id="experiences"></div>
+      <!-- Experiences -->
+      <div class="col-md-10 mx-auto m-3 my-md-5 d-md-flex p-0">
+        <article class="blog-post col-md pt-3 px-3 p-md-5 text-secondary overflow-hidden" style="background-color: rgb(248, 227, 176);">
+          <h4 class="text-dark font-weight-bold">Experiences</h4>
+          <h3 class="text-dark font-weight-bold">Gilroy Technology  </h3>
+          <p>Gilroy, CA<br>July 2020 - January 2021 <span class="text-info" style="color: #eab676;">Software Engineering Internship (Remote)</span></p>
+          <p>From Tokyo to Mexico, to Rio. Yeah, you take me to utopia. I'm walking on air. We'd make out in your Mustang to Radiohead. I mean the ones, I mean like she's the one. Sun-kissed skin so hot we'll melt your popsicle. Slow cooking pancakes for my boy, still up, still fresh as a Daisy.</p>
+          <ul>
+            <li>Developing and implementing highly responsive user interface components using React</li>
+            <li>Reviewing application requirements and interface designs</li>
+            <li>Developing and implementing front-end architecture to support user interface concepts</li>
+            <li>Monitoring and improving front-end performance</li>
+            <li>Worked independently and on a team of 4</li>
+            <li>Troubleshooting interface software and debugging application codes</li>
+          </ul>
+        </article>
+        <article class="blog-post col-md-6 pt-3 px-3 p-md-5 text-secondary overflow-hidden" style="background-color: #F5F8FC;">
+          <h4 class="text-dark font-weight-bold">Experiences</h4>
+          <h3 class="text-dark font-weight-bold">Cavallo Point Lodge</h3>
+          <p>Sausalito, CA <br> October 2016 - June 2019 as <span class="text-info">Banquet Server</span></p>
+          <p>From Tokyo to Mexico, to Rio. Yeah, you take me to utopia. I'm walking on air. We'd make out in your Mustang to Radiohead. I mean the ones, I mean like she's the one. Sun-kissed skin so hot we'll melt your popsicle. Slow cooking pancakes for my boy, still up, still fresh as a Daisy.</p>
+          <ul>
+            <li>Excelled within service-oriented positions (concurrent with college studies)</li>
+            <li>Delivering premium customer service and attracting repeat customers.</li>
+            <li>Focus on weddings, corporate meetings and other large-scale events.</li>
+            <li>Responsible for all table service duties as well as prep work and closeout tasks.</li>
+          </ul>
+        </article>
+      </div>
+      <div id="works"></div>
+      <!-- Project -->
+      <div class="py-3 py-md-5 my-md- skill-1" style="background-color: #F5F8FC;">
+        <h2 class="display-5 text-md-center pl-3 pl-md-none font-weight-bold">Recently work</h2>
+        <p class="text-md-center pl-3 pl-md-none mb-md-4 text-dark">React, JavaScript, Node JS, Express, Mongo DB, Bootstap, HTML/CSS</p>
+        <div class="col-md-8 px-3 mx-auto my-3">
+          <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="col p-md-0 px-md-3 mb-4">
+              <div class="my-project text-secondary p-3" style="background-color: #abdbe3;">
+                <a href="https://master.dizkjt9pljone.amplifyapp.com" target="_blank"><img class="img-fluid shadow-lg border border-secondary" src="https://i.ibb.co/c8Lq9Dj/showtimes.png"/></a>
+                <div>
+                  <a class="nav-link p-0 text-dark" href="https://master.dizkjt9pljone.amplifyapp.com" target="_blank"><h5 class="mt-3">Showtimes with TMDB api</h5></a>
+                  <p class="m-0">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <a class="nav-link px-0 text-info" href="https://github.com/iapisak/showtime" target="_blank">Learn more - Github</a>
+              </div>
+            </div>
+            <div class="col p-md-0 px-md-3 mb-4">
+              <div class="my-project text-secondary p-3" style="background-color: #abdbe3;">
+                <a href="https://master.dks978ck4akll.amplifyapp.com" target="_blank"><img class="img-fluid shadow-lg border border-secondary" src="https://i.ibb.co/Sy2SRvH/shuffle.png"/></a>
+                <div>
+                  <a class="nav-link p-0 text-dark" href="https://master.dks978ck4akll.amplifyapp.com" target="_blank"><h5 class="mt-3">Shuffle with Spotify api</h5></a>
+                  <p class="m-0">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <a class="nav-link px-0 text-info" href="https://github.com/iapisak/shuffle-app" target="_blank">Learn more - Github</a>
+              </div>
+            </div>
+            <div class="col p-md-0 px-md-3 mb-4">
+              <div class="my-project text-muted p-3" style="background-color: #abdbe3;">
+                <a href="https://project-write-it.herokuapp.com" target="_blank"><img class="img-fluid shadow-lg border border-light" src="https://i.ibb.co/1mffN44/writeit.png"/></a>
+                <div class="">
+                  <a class="nav-link p-0 text-dark" href="https://project-write-it.herokuapp.com" target="_blank"><h5 class="mt-3">Writeit</h5></a>
+                  <p class="m-0">Write-It is social Blog with different communities that users can join. In these communities, users can create posts to share their experiences with other users or comment on other user's posts. The goal of this site is to create an online community for users to share their interests and ideas</p>
+                </div>
+                <a class="nav-link px-0 text-info" href="https://github.com/iapisak/final-project-4-write-it-frontend" target="_blank">Learn more - Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Educations and Contact -->
+      <div class="col-md-10 mx-auto d-md-flex m-3 my-md-5 p-0">
+        <article id="educations" class="blog-post col-md-6 p-3 p-md-5 text-secondary" style="background-color: #F5F8FC;">
+          <h5 class="text-dark">Educations</h5>
+          <ul>
+            <li>Free Code BootCamp<span class="text-info"> - JavaScript Algorithms and Data Structures (Online)</span></li>
+            <li>Udemy<span class="text-info"> - The Web Developer BootCamp (Online)</span></li>
+            <li>General Assembly<span class="text-info"> - Software Engineering Immersive</span></li>
+            <li>Suan Sunandha Rajabhat University<span class="text-info"> - BA, Business Computer</span></li>
+            <li>Thonburi Vocational University<span class="text-info"> - Computer and Information Sciences and Support Services</span></li>
+          </ul>
+          <h5 id="skills" class="text-dark">Skills</h5>
+          <ul>
+            <li>Programming Languages<span class="text-info"> : JavaScript, HTML, CSS/Sass, Python</span></li>
+            <li>Libraries & Frameworks<span class="text-info"> : React, Express, Django, Node.Js, jQuery</span></li>
+            <li>Tools & Platforms<span class="text-info"> : Github, Git, Heroku</span></li>
+          </ul>
+        </article>
+        <article id="contact" class="blog-post col-md-6 p-3 p-md-5 text-secondary" style="background-color: rgb(248, 227, 176)">
+          <h5 class="text-dark">Contact</h5>
+          <ul>
+            <li><a class="nav-link p-0 text-info" href="https://github.com/iapisak" target="_blank">Github</a></li>
+            <li><a class="nav-link p-0 text-info" href="https://www.linkedin.com/in/apisak-potisanmetee" target="_blank">Linkedin</a></li>
+            <li>Email: apotisanmetee@gmail.com</li>
+            <li>Tel: 415-942-4504</li>
+            <li>Sausalito, CA 94965</li>
+          </ul>
+        </article>
+      </div>
+    </main>
+    <script>
+      const nav = document.querySelector('nav')
+      function lightNav() {
+          if (window.scrollY > 1) {
+              nav.classList.add('light-nav')
+          } else {
+              nav.classList.remove('light-nav')
+          }
+      }
+      window.addEventListener('scroll', lightNav)
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
